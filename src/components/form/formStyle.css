@@ -1,0 +1,53 @@
+.form-container{
+    width: 20rem;
+    height: 26rem;
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1.6%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    position: fixed;
+}
+
+form{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.input-form{
+ width: 100%;
+ border: 1px solid lightblue;
+ border-radius: 0.5rem;
+ padding: 0.3rem;
+ background-color: white;
+}
+
+.file-input{
+ font-size: 12px;  
+}
+
+.btns{
+    margin-top: 25px;
+}
+.clear-btn{
+    background-color: red;
+    color: white;
+}
+.submit-btn{
+    padding: 0.3rem;
+}
+.submit-btn{
+    width: 100%;
+}
+
+@media screen and (max-width:600px){
+    .form-container{
+        position: unset;
+        width: 17rem;
+        height: 25rem;
+        padding: 3.6%;
+    }
+    
+}
