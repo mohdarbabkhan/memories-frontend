@@ -23,7 +23,7 @@ const Post = ({post,setcurrentId}) => {
   return (
    <div className='posts-container'>
       <div className='img-container'>
-        <img src={post.selectedFile} alt="post image"/>
+       { post.selectedFile ? <img src={post.selectedFile} alt="image"/> : <img src={img1} alt="image"/>}
       </div>
       <div className='overlay-content'>
         <div className='creator'>

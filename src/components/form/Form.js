@@ -15,7 +15,7 @@ const Form = ({currentId,setcurrentId}) => {
   const handleSubmit = (e)=>{
     e.preventDefault();
     if(currentId){
-      dispatch(patchPost(currentId,postData))
+      dispatch(patchPost({currentId,postData}))
     }else{
       dispatch(makePosts(postData))
     }
